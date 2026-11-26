@@ -3,7 +3,12 @@
 
 print("Welcome to the Shopping Cart Program!")
 product=input("Enter the product name to add to the shopping cart: ")
+names=[
+    "1.mat", "2. bed", "3. mop", "4. vacuum", "5. umbrella"]
+prices=[
+    2.00, 200.00, 15.00, 150.00, 25.00]
 print(f"Added {product} to the shopping cart.")
+# Items, prices, and their location in the cart can be displayed.
 # Display the contents of the shopping cart
 print("Contents of the shopping cart:")
 print(product)
@@ -41,3 +46,10 @@ while True:
         break
     else:
         print("Invalid choice. Please try again.")
+        # Items and their prices are first displayed and then an item with its corresponding price can be removed by index.
+        print("Contents of the shopping cart:")
+        for i in range(len(names)):
+            print(f"{i + 1}. {names[i]} - ${prices[i]:.2f}")
+            # Items and their prices are displayed with a 1-based index. Items and their prices are removed with the translated 0-based index.
+       
+      
