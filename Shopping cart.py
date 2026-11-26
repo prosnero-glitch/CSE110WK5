@@ -23,3 +23,21 @@ print("3. Mop")
 print("4. Vacuum")
 print("5. Umbrella")
 print("6. Quit")
+# Have menu system that repeats until the user chooses quit.
+while True:
+    choice = input("Enter your choice (1-6): ")
+    if choice == "1":
+        print("You selected Mat.")
+    elif choice == "2":
+        print("You selected Bed.")
+    elif choice == "3":
+        print("You selected Mop.")
+    elif choice == "4":
+        print("You selected Vacuum.")
+    elif choice == "5":
+        print("You selected Umbrella.")
+    elif choice == "6":
+        print("Quitting...")
+        break
+    else:
+        print("Invalid choice. Please try again.")
